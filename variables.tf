@@ -5,7 +5,6 @@ variable "common_tags" {
     owner       = string
     environment = string
   })
-
   default = {
     managedBy   = "youDidNotSpecify"
     owner       = "youDidNotSpecify"
