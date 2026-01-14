@@ -23,10 +23,9 @@ variable "vpc_config" {
     enable_dns_hostnames = bool
   })
   default = {
-    name       = "youDidNotSpecify"
-    create_vpc = true
-    cidr_block = "10.0.0.0/16"
-
+    name                 = "youDidNotSpecify"
+    create_vpc           = true
+    cidr_block           = "10.0.0.0/16"
     instance_tenancy     = "default"
     enable_dns_support   = true
     enable_dns_hostnames = true
