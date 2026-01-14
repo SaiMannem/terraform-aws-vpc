@@ -1,3 +1,4 @@
+#object typed is best datatype if we create the single object
 variable "common_tags" {
   type = object({
     managedBy   = string
