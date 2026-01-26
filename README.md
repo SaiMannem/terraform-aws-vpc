@@ -8,27 +8,25 @@ The VPCs are defined via a map of objects, allowing flexible customization for e
 ### Usage
 ```hcl
 module "vpc" {
-  source = "./modules/vpc"
+  source = "git::https://github.com/SaiMannem/terraform-aws-vpc.git//modules/vpc?ref=main"
+
+  common_tags = {
+    managedBy   = "Terraform"
+    owner       = "Sai_Mannem"
+    environment = "development"
+  }
 
   vpcs = {
-    vpc1 = {
+    thisIsYourVpcName001 = {
       cidr_block           = "10.0.0.0/16"
       enable_dns_support   = true
       enable_dns_hostnames = true
-      tags = {
-        Name = "vpc-1"
-        Env  = "dev"
-      }
     }
 
-    vpc2 = {
+    thisIsYourVpcName002 = {
       cidr_block           = "10.1.0.0/16"
       enable_dns_support   = true
       enable_dns_hostnames = false
-      tags = {
-        Name = "vpc-2"
-        Env  = "prod"
-      }
     }
   }
 }
