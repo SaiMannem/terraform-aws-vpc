@@ -35,33 +35,9 @@ module "vpc" {
 ```
 ## Inputs
 
-<div align="right">
-  <div style="overflow-x: auto;">
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>common_tags</td>
-          <td>object</td>
-          <td><code>{ managedBy = "youDidNotSpecify", owner = "youDidNotSpecify", environment = "youDidNotSpecify" }</code></td>
-          <td>Common tags applied to all resources</td>
-        </tr>
-        <tr>
-          <td>vpc_config</td>
-          <td>map(object)</td>
-          <td><code>{ "youDidNotSpecify" = { cidr_block = "10.0.0.0/16", instance_tenancy = "default", enable_dns_support = true, enable_dns_hostnames = true } }</code></td>
-          <td>Map of VPC configurations</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+| Name        | Type        | Default                                                                                                                       | Description                        |
+|-------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| common_tags | object      | `{ managedBy = "youDidNotSpecify", owner = "youDidNotSpecify", environment = "youDidNotSpecify" }`                             | Common tags applied to all resources |
+| vpc_config  | map(object) | `{ "youDidNotSpecify" = { cidr_block = "10.0.0.0/16", instance_tenancy = "default", enable_dns_support = true, enable_dns_hostnames = true } }` | Map of VPC configurations           |
 
 
