@@ -12,19 +12,21 @@ module "vpc" {
 
   common_tags = {
     managedBy   = "Terraform"
-    owner       = "Sai_Mannem"
+    owner       = "SaiMannem"
     environment = "development"
   }
 
   vpcs = {
     thisIsYourVpcName001 = {
       cidr_block           = "10.0.0.0/16"
+      instance_tenancy     = "default"
       enable_dns_support   = true
       enable_dns_hostnames = true
     }
 
     thisIsYourVpcName002 = {
       cidr_block           = "10.1.0.0/16"
+      instance_tenancy     = "default"
       enable_dns_support   = true
       enable_dns_hostnames = false
     }
