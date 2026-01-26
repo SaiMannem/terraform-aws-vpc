@@ -44,7 +44,7 @@ module "vpc" {
 
 | Name                       | Description                              |
 |----------------------------|------------------------------------------|
-| vpc_id                     | resource ID of the VPC                   |
+| vpc_id                     | Resource ID of the VPC                   |
 | vpc_arn                    | ARN of the VPC                           |
 | cidr_block                 | CIDR block of the VPC                    |
 | default_security_group_id  | Default security group ID of the VPC     |
