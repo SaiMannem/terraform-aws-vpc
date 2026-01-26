@@ -42,11 +42,17 @@ module "vpc" {
 
 ### Outputs
 
-| Name                       | Description                              |
-|----------------------------|------------------------------------------|
-| vpc_id                     | Resource ID of the VPC                   |
-| vpc_arn                    | ARN of the VPC                           |
-| cidr_block                 | CIDR block of the VPC                    |
-| default_security_group_id  | Default security group ID of the VPC     |
-| default_network_acl_id     | Default network ACL ID of the VPC        |
-| default_route_table_id     | Default route table ID of the VPC        |
+| Name                                                                  | Description                              |
+|-----------------------------------------------------------------------|------------------------------------------|
+| vpc_id                                                                | Resource ID of the VPC                   |
+| vpc_arn                                                               | ARN of the VPC                           |
+| cidr_block                                                            | CIDR block of the VPC                    |
+| default_security_group_id                                             | Default security group ID of the VPC     |
+| default_network_acl_id                                                | Default network ACL ID of the VPC        |
+| default_route_table_id                                                | Default route table ID of the VPC        |
+
+### Author
+**Sai Krishna Mannem**  
+
+### License
+This project is licensed under the [Apache License 2.0](./LICENSE).
