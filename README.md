@@ -34,7 +34,6 @@ module "vpc" {
 }
 ```
 ## Inputs
-
 | Name        | Type        | Default                                                                                                                       | Description                        |
 |-------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
 | common_tags | object      | `{ managedBy = "youDidNotSpecify", owner = "youDidNotSpecify", environment = "youDidNotSpecify" }`                             | Common tags applied to all resources |
