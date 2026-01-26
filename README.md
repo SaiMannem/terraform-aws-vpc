@@ -35,7 +35,9 @@ module "vpc" {
 ```
 ## Inputs
 
-| Name         | Type        | Default                                                                                                                                                                                                 | Description                        |
-|--------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| common_tags  | object      | `{ managedBy="youDidNotSpecify", owner="youDidNotSpecify", environment="youDidNotSpecify" }`                                                                                                            | Common tags applied to all resources |
-| vpc_config   | map(object) | `{ "youDidNotSpecify" = { cidr_block="10.0.0.0/16", instance_tenancy="default", enable_dns_support=true, enable_dns_hostnames=true } }`                                                                 | Map of VPC configurations           |
+| Name        | Type        | Default                                                                                                                       | Description                        |
+|-------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| common_tags | object      | `{ managedBy = "youDidNotSpecify", owner = "youDidNotSpecify", environment = "youDidNotSpecify" }`                             | Common tags applied to all resources |
+| vpc_config  | map(object) | `{ "youDidNotSpecify" = { cidr_block = "10.0.0.0/16", instance_tenancy = "default", enable_dns_support = true, enable_dns_hostnames = true } }` | Map of VPC configurations           |
+
+
