@@ -52,7 +52,7 @@ module "vpc" {
 | default_route_table_id                                                | Default route table ID of the VPC        |
 
 ### Author
-Sai Krishna Mannem 
+[Sai Krishna Mannem](https://github.com/SaiMannem)
 
 ### License
 This project is licensed under the [Apache License 2.0](./LICENSE).
