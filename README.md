@@ -10,12 +10,6 @@ The VPCs are defined via a map of objects, allowing flexible customization for e
 module "vpc" {
   source = "git::https://github.com/SaiMannem/terraform-aws-vpc.git//modules/vpc?ref=main"
 
-  common_tags = {
-    managedBy   = "Terraform"
-    owner       = "SaiMannem"
-    environment = "development"
-  }
-
   vpc_config = {
     thisIsYourVpcName001 = {
       cidr_block           = "10.0.0.0/16"
