@@ -1,17 +1,4 @@
 #object typed is best datatype if we create the single object
-variable "common_tags" {
-  type = object({
-    managedBy   = string
-    owner       = string
-    environment = string
-  })
-  default = {
-    managedBy   = "youDidNotSpecify"
-    owner       = "youDidNotSpecify"
-    environment = "youDidNotSpecify"
-  }
-}
-
 variable "vpc_config" {
   type = map(object({
     cidr_block           = string
